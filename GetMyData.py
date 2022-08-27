@@ -36,7 +36,7 @@ try:
             latest_backup = today - datetime.timedelta(days=int(arg))
         elif opt in ("-d", "--date"):
             latest_backup = datetime.datetime.strptime(arg, '%Y%m%d').date()
-        elif opt in ("-c", "--cookie_file"):
+        elif opt in ("-c", "--cookie_file"): 
             cookie_file = arg
         elif opt in ("-A", "--append"):
             append_file = True
